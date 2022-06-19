@@ -1,3 +1,5 @@
+Starting files for VS Code courtesy of: https://github.com/adamth/sass-project
+
 Base files for udemy course 'The Complete Sass & SCSS Couse: From Beginner to Advanced' for use with gulp.
 https://www.udemy.com/sasscourse/
 
