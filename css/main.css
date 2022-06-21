@@ -9,10 +9,20 @@ a {
   font-size: 125%;
 }
 
+.error, .critical-error {
+  color: red;
+}
+
+.critical-error {
+  bottom: 1px solid red;
+  font-weight: bold;
+}
+
 body {
   font-family: "Alegreya Sans", Arial, sans-serif;
   font-size: 1.125em;
-  color: #222222;
+  background-color: #22222a;
+  color: #000;
 }
 @media only screen and (max-width: 960px) {
   body {
@@ -34,10 +44,18 @@ p {
 }
 
 a {
-  color: #f27731;
+  color: #c24721;
 }
 a:hover {
-  color: #ca510d;
+  color: #812f16;
+}
+
+.sub-title {
+  font-style: italic;
+}
+
+.sub-title {
+  font-size: 1.25em;
 }
 
 .warning-button {
@@ -49,14 +67,29 @@ a:hover {
   background-color: #ffb733;
 }
 
+.cta-button, .super-cta-button {
+  background-color: orange;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.cta-button:hover, .super-cta-button:hover {
+  background-color: #ffb733;
+}
+
+.super-cta-button {
+  font-size: 1.25em;
+}
+
 #header {
   border-radius: 12px;
   border: 1px solid #fff;
-  box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
-  -moz-box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
-  -webkit-box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
+  box-shadow: 2px 0px 4px #999, 1px 1px 6px #c24721;
+  -moz-box-shadow: 2px 0px 4px #999, 1px 1px 6px #c24721;
+  -webkit-box-shadow: 2px 0px 4px #999, 1px 1px 6px #c24721;
   height: 60px;
-  background-color: #170a48;
+  background-color: #42424a;
 }
 #header #main-menu li {
   display: inline;
@@ -102,6 +135,6 @@ a:hover {
 #footer {
   clear: both;
   height: 90px;
-  background-color: #ccf962;
+  background-color: #698932;
   float: none;
 }/*# sourceMappingURL=main.css.map */
