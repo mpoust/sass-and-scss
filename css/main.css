@@ -11,7 +11,13 @@ a {
 
 body {
   font-family: "Alegreya Sans", Arial, sans-serif;
+  font-size: 1.125em;
   color: #222222;
+}
+@media only screen and (max-width: 960px) {
+  body {
+    font-size: 125%;
+  }
 }
 
 h1, h2, h3, h4 {
@@ -30,11 +36,17 @@ p {
 a {
   color: #f27731;
 }
+a:hover {
+  color: #ca510d;
+}
 
 .warning-button {
   background-color: orange;
   color: #fff;
   padding: 8px 12px;
+}
+.warning-button:hover {
+  background-color: #ffb733;
 }
 
 #header {
@@ -51,13 +63,45 @@ a {
 }
 #header #main-menu a {
   color: white;
+  padding: 6px 8px;
+  border-bottom: 1px solid rgba(254, 254, 254, 0);
+  transition: border-bottom 0.5s;
+  transition-timing-function: ease-in-out;
+}
+#header #main-menu a:hover {
+  border-bottom: 1px solid #fefefe;
 }
 #main {
   width: 960px;
   margin-left: auto;
   margin-right: auto;
 }
+@media only screen and (max-width: 960px) {
+  #main {
+    width: auto;
+    max-width: 960px;
+  }
+}
+#main #content {
+  float: left;
+  width: 69.75%;
+}
+#main #sidebar {
+  float: right;
+  width: 23.25%;
+}
+#main #sidebar li {
+  list-style-type: none;
+  padding: 16px 20px;
+  border-bottom: 1px dashed #999;
+}
+#main #sidebar li:hover {
+  background-color: #efefef;
+}
+
 #footer {
+  clear: both;
   height: 90px;
   background-color: #ccf962;
+  float: none;
 }/*# sourceMappingURL=main.css.map */
