@@ -1,7 +1,16 @@
-@import "variables";
-@import "mixins";
+@import "partials/variables";
+@import "partials/mixins";
+
+@include google-font("Alegreya+Sans");
+@include google-font("Titillium+Web");
 
 @include fancy-links;
+
+@include apply-to-ie-6 {
+  body {
+    font-size: 125%;
+  }
+}
 
 body {
   font-family: $text-font;
@@ -12,7 +21,7 @@ h1, h2, h3, h4 {
   font-family: $headline-font;
 }
 
-h2{
+h2 {
   @include large-text;
 }
 
@@ -24,7 +33,7 @@ a {
   color: $link-color;
 }
 
-.warning-button{
+.warning-button {
   @include warning;
   padding: 8px 12px;
 }
@@ -36,12 +45,12 @@ a {
   background-color: $theme-color;
 
   #main-menu {
-
-    li{
+    
+    li {
       display: inline;
     }
-    a{
-      columns: $menu-item-color;
+    a {
+      color: $menu-item-color;
     }
   }
   
